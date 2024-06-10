@@ -3,7 +3,7 @@ using Sube2.HelloMvc.Models.Relationships;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-namespace DersAnaProje.Controllers
+namespace Sube2.HelloMvc.Controllers
 {
     public class DersController : Controller
     {

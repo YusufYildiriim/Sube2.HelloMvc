@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
-namespace DersAnaProje.Controllers
+namespace Sube2.HelloMvc.Controllers
 {
     public class OgrenciController : Controller
     {
