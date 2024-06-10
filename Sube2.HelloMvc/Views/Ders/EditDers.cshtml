@@ -1,0 +1,32 @@
+﻿@model Ders
+@{
+    ViewData["Title"] = "EditDers";
+}
+
+<div class="container my-5">
+    <div class="card shadow">
+        <div class="card-header bg-dark text-white">
+            <h2 class="mb-0">Dersleri Düzenle</h2>
+        </div>
+        <div class="card-body" style="background-color: #333333;">
+            <form asp-action="EditDers" asp-controller="Ders" method="post">
+                <input asp-for="Dersid" type="hidden" />
+                <div class="mb-3">
+                    <label for="DersKodu" class="form-label" style="color: #cccccc;">Ders Kodu</label>
+                    <input asp-for="DersKodu" class="form-control" id="DersKodu" style="background-color: #444444; color: #ffffff;" />
+                </div>
+                <div class="mb-3">
+                    <label for="DersAd" class="form-label" style="color: #cccccc;">Ders Adı</label>
+                    <input asp-for="DersAd" class="form-control" id="DersAd" style="background-color: #444444; color: #ffffff;" />
+                </div>
+                <div class="mb-3">
+                    <label for="Kredi" class="form-label" style="color: #cccccc;">Kredi</label>
+                    <input asp-for="Kredi" class="form-control" id="Kredi" style="background-color: #444444; color: #ffffff;" />
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary btn-lg">Kaydet</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,32 @@
+﻿@model Ders
+@{
+    ViewData["Title"] = "AddDers";
+}
+<div class="container d-flex justify-content-center my-5">
+    <div class="card shadow-lg" style="width: 100%; max-width: 600px; background-color: #333333;">
+        <div class="card-body">
+            <h2 class="card-title text-center mb-4" style="color: black;">Ders Ekleme İşlemi</h2>
+            <form asp-action="AddDers" asp-controller="Ders" method="post">
+                <div class="form-floating mb-3">
+                    <input asp-for="DersKodu" class="form-control" id="DersKodu" placeholder="Ders Kodu" style="background-color: #444444; color: #ffffff;" />
+                    <label for="DersKodu" style="color: black;">Ders Kodu</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input asp-for="DersAd" class="form-control" id="DersAd" placeholder="Ders Adı" style="background-color: #444444; color: #ffffff;" />
+                    <label for="DersAd" style="color: black;">Ders Adı</label>
+                </div>
+
+                <div class="form-floating mb-4">
+                    <input asp-for="Kredi" class="form-control" id="Kredi" placeholder="Kredi" style="background-color: #444444; color: #ffffff;" />
+                    <label for="Kredi" style="color: black;">Kredi</label>
+                </div>
+
+                <div class="d-flex justify-content-between mt-4">
+                    <button type="submit" class="btn btn-primary btn-lg">Kaydet</button>
+                    <button type="reset" class="btn btn-secondary btn-lg">Temizle</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
